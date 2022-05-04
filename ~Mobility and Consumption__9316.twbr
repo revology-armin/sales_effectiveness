@@ -1,0 +1,1102 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <CustomReferenceLineTooltips />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='HowUSMobilityhasErodedAcceleratedRetailSales' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='mobility_spending_tableau' inline='true' name='federated.0s0ruct0u3qwss15vocqb15tmnbb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mobility_spending_tableau' name='textscan.1tf1q3a1st71gf1cyzdc11u4j8vl'>
+            <connection class='textscan' directory='C:/Users/armin/OneDrive/Documents/GitHub/sales_effectiveness' filename='mobility_spending_tableau.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1tf1q3a1st71gf1cyzdc11u4j8vl' name='mobility_spending_tableau.csv' table='[mobility_spending_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='transportation_type' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='real' name='direction_requests' ordinal='2' />
+            <column datatype='string' name='consumption' ordinal='3' />
+            <column datatype='integer' name='sales_MM_dollars' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1tf1q3a1st71gf1cyzdc11u4j8vl' name='mobility_spending_tableau.csv' table='[mobility_spending_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='transportation_type' ordinal='0' />
+            <column datatype='date' name='date' ordinal='1' />
+            <column datatype='real' name='direction_requests' ordinal='2' />
+            <column datatype='string' name='consumption' ordinal='3' />
+            <column datatype='integer' name='sales_MM_dollars' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transportation_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transportation_type]</local-name>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias>transportation_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>direction_requests</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[direction_requests]</local-name>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias>direction_requests</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>consumption</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[consumption]</local-name>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias>consumption</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_MM_dollars</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sales_MM_dollars]</local-name>
+            <parent-name>[mobility_spending_tableau.csv]</parent-name>
+            <remote-alias>sales_MM_dollars</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]&quot;' value='$MM Sales' />
+        </aliases>
+      </column>
+      <column caption='Correlations' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_655555251511058432]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CORR([direction_requests], [sales_MM_dollars])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='mobility_spending_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C]' role='measure' type='quantitative' />
+      <column caption='Consumption Type' datatype='string' name='[consumption]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;alcoholic_beverage_sales&quot;' value='Alcohol and Beer Sales' />
+          <alias key='&quot;auto_parts_tires_sales&quot;' value='Auto Parts and Tire Sales' />
+          <alias key='&quot;electronics_sales&quot;' value='Electronics Sales' />
+          <alias key='&quot;grocery_sales&quot;' value='Grocery Sales' />
+          <alias key='&quot;restaurant_spend&quot;' value='Restaurant Spend' />
+          <alias key='&quot;sporting_good_sales&quot;' value='Sporting Goods Sales' />
+          <alias key='&quot;toy_store_sales&quot;' value='Toy Store Sales' />
+        </aliases>
+      </column>
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Mobility Index' datatype='real' name='[direction_requests]' role='measure' type='quantitative' />
+      <column caption='$MM' datatype='integer' name='[sales_MM_dollars]' role='measure' type='quantitative' />
+      <column caption='Transportation Type' datatype='string' name='[transportation_type]' role='dimension' type='nominal' />
+      <column-instance column='[transportation_type]' derivation='None' name='[none:transportation_type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[direction_requests]' derivation='Sum' name='[sum:direction_requests:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sales_MM_dollars]' derivation='Sum' name='[sum:sales_MM_dollars:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Consumption Type,Transportation Type)' hidden='true' name='[Action (Consumption Type,Transportation Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[consumption]' />
+          <groupfilter function='level-members' level='[transportation_type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/armin/OneDrive/Documents/GitHub/sales_effectiveness/mobility_spending_tableau.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>transportation_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transportation_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transportation_type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>mobility_spending_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>mobility_spending_tableau.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>direction_requests</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[direction_requests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>direction_requests</remote-alias>
+              <ordinal>2</ordinal>
+              <family>mobility_spending_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>consumption</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[consumption]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>consumption</remote-alias>
+              <ordinal>3</ordinal>
+              <family>mobility_spending_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_MM_dollars</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[sales_MM_dollars]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_MM_dollars</remote-alias>
+              <ordinal>4</ordinal>
+              <family>mobility_spending_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>182</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:transportation_type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;driving&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;walking&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;transit&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='mobility_spending_tableau.csv' id='mobility_spending_tableau.csv_C84ACB794E8048FA9FDBF809DCC8812C'>
+            <properties context=''>
+              <relation connection='textscan.1tf1q3a1st71gf1cyzdc11u4j8vl' name='mobility_spending_tableau.csv' table='[mobility_spending_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='transportation_type' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='real' name='direction_requests' ordinal='2' />
+                  <column datatype='string' name='consumption' ordinal='3' />
+                  <column datatype='integer' name='sales_MM_dollars' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Correlation Filter' name='[Action1_8A569610FB14454483DA97E38E82007B]'>
+      <activation type='on-select' />
+      <source datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb' type='datasource'>
+        <exclude-sheet name='Consumption vs Mobility Index Matrix' />
+        <exclude-sheet name='TS - Filtered' />
+        <exclude-sheet name='Regression Filtered' />
+      </source>
+      <command command='tsc:tsl-filter'>
+        <param name='single-select' value='' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Regression Filtered' />
+      </command>
+    </action>
+    <action caption='Correlation Filter 2' name='[Action2_DB57EB3050864DD8A8DFB836AC8FEF50]'>
+      <activation type='on-select' />
+      <source datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb' type='datasource'>
+        <exclude-sheet name='Consumption vs Mobility Index Matrix' />
+        <exclude-sheet name='TS - Filtered' />
+        <exclude-sheet name='Regression Filtered' />
+      </source>
+      <command command='tsc:tsl-filter'>
+        <param name='single-select' value='' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='TS - Filtered' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Consumption vs Mobility Index Matrix'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mobility_spending_tableau' name='federated.0s0ruct0u3qwss15vocqb15tmnbb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb'>
+            <column caption='Consumption Type' datatype='string' name='[consumption]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;alcoholic_beverage_sales&quot;' value='Alcohol and Beer Sales' />
+                <alias key='&quot;auto_parts_tires_sales&quot;' value='Auto Parts and Tire Sales' />
+                <alias key='&quot;electronics_sales&quot;' value='Electronics Sales' />
+                <alias key='&quot;grocery_sales&quot;' value='Grocery Sales' />
+                <alias key='&quot;restaurant_spend&quot;' value='Restaurant Spend' />
+                <alias key='&quot;sporting_good_sales&quot;' value='Sporting Goods Sales' />
+                <alias key='&quot;toy_store_sales&quot;' value='Toy Store Sales' />
+              </aliases>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Mobility Index' datatype='real' name='[direction_requests]' role='measure' type='quantitative' />
+            <column-instance column='[consumption]' derivation='None' name='[none:consumption:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transportation_type]' derivation='None' name='[none:transportation_type:nk]' pivot='key' type='nominal' />
+            <column caption='$MM' datatype='integer' name='[sales_MM_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[direction_requests]' derivation='Sum' name='[sum:direction_requests:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales_MM_dollars]' derivation='Sum' name='[sum:sales_MM_dollars:qk]' pivot='key' type='quantitative' />
+            <column caption='Transportation Type' datatype='string' name='[transportation_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' field-type='quantitative' range-type='independent' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' scope='rows' value='$MM' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' />
+              <lod column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='circle' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk] * [federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk])</rows>
+        <cols>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk] * [federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk])</cols>
+      </table>
+      <simple-id uuid='{1F37BEFD-78AB-4905-BBA9-1B8A0F3A4FC0}' />
+    </worksheet>
+    <worksheet name='Correlations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='20'>Correlation of Apple Mobility Index and monthly Retail Sales</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#ffffff' fontsize='11'>Jan 2020 - Feb 2022</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#59a14f' fontsize='14'>*Click on each correlation coefficient to filter charts*</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mobility_spending_tableau' name='federated.0s0ruct0u3qwss15vocqb15tmnbb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb'>
+            <column caption='Correlations' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Calculation_655555251511058432]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CORR([direction_requests], [sales_MM_dollars])' />
+            </column>
+            <column caption='Consumption Type' datatype='string' name='[consumption]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;alcoholic_beverage_sales&quot;' value='Alcohol and Beer Sales' />
+                <alias key='&quot;auto_parts_tires_sales&quot;' value='Auto Parts and Tire Sales' />
+                <alias key='&quot;electronics_sales&quot;' value='Electronics Sales' />
+                <alias key='&quot;grocery_sales&quot;' value='Grocery Sales' />
+                <alias key='&quot;restaurant_spend&quot;' value='Restaurant Spend' />
+                <alias key='&quot;sporting_good_sales&quot;' value='Sporting Goods Sales' />
+                <alias key='&quot;toy_store_sales&quot;' value='Toy Store Sales' />
+              </aliases>
+            </column>
+            <column caption='Mobility Index' datatype='real' name='[direction_requests]' role='measure' type='quantitative' />
+            <column-instance column='[consumption]' derivation='None' name='[none:consumption:nk]' pivot='key' type='nominal' />
+            <column-instance column='[transportation_type]' derivation='None' name='[none:transportation_type:nk]' pivot='key' type='nominal' />
+            <column caption='$MM' datatype='integer' name='[sales_MM_dollars]' role='measure' type='quantitative' />
+            <column caption='Transportation Type' datatype='string' name='[transportation_type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_655555251511058432]' derivation='User' name='[usr:Calculation_655555251511058432:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]'>
+            <groupfilter function='level-members' level='[none:consumption:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' member-value='&quot;driving&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='35' />
+            <format attr='width' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='70' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='11' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='204' />
+            <format attr='height' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='32' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='11' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='11' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' num-steps='6' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#7baf3c' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#091c32' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#7baf3c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' />
+              <text column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]</rows>
+        <cols>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]</cols>
+      </table>
+      <simple-id uuid='{9BDD5081-BE5B-4B3E-ACB8-30B6697C5EF2}' />
+    </worksheet>
+    <worksheet name='Regression Filtered'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Relationship between mobility index for </run>
+            <run bold='true' fontcolor='#091c32' fontsize='18'><![CDATA[<[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]>]]></run>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'> and</run>
+            <run bold='true' fontcolor='#091c32' fontsize='18'><![CDATA[ <[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mobility_spending_tableau' name='federated.0s0ruct0u3qwss15vocqb15tmnbb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb'>
+            <column caption='Consumption Type' datatype='string' name='[consumption]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;alcoholic_beverage_sales&quot;' value='Alcohol and Beer Sales' />
+                <alias key='&quot;auto_parts_tires_sales&quot;' value='Auto Parts and Tire Sales' />
+                <alias key='&quot;electronics_sales&quot;' value='Electronics Sales' />
+                <alias key='&quot;grocery_sales&quot;' value='Grocery Sales' />
+                <alias key='&quot;restaurant_spend&quot;' value='Restaurant Spend' />
+                <alias key='&quot;sporting_good_sales&quot;' value='Sporting Goods Sales' />
+                <alias key='&quot;toy_store_sales&quot;' value='Toy Store Sales' />
+              </aliases>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Mobility Index' datatype='real' name='[direction_requests]' role='measure' type='quantitative' />
+            <column-instance column='[consumption]' derivation='None' name='[none:consumption:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transportation_type]' derivation='None' name='[none:transportation_type:nk]' pivot='key' type='nominal' />
+            <column caption='$MM' datatype='integer' name='[sales_MM_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[direction_requests]' derivation='Sum' name='[sum:direction_requests:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales_MM_dollars]' derivation='Sum' name='[sum:sales_MM_dollars:qk]' pivot='key' type='quantitative' />
+            <column caption='Transportation Type' datatype='string' name='[transportation_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[Action (Consumption Type,Transportation Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_8A569610FB14454483DA97E38E82007B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[consumption]' member='&quot;restaurant_spend&quot;' />
+              <groupfilter function='member' level='[transportation_type]' member='&quot;driving&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[Action (Consumption Type,Transportation Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' field-type='quantitative' range-type='independent' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' scope='cols' value='Mobility Index (Jan 2020 =  ~ 100)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='28' />
+            <format attr='width' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='44' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='false' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='18' />
+            <format attr='text-format' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+            <format attr='text-orientation' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='-90' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='18' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' value='16' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' value='18' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#7baf3c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' />
+              <lod column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='circle' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk] * [federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk])</rows>
+        <cols>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk] * [federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk])</cols>
+      </table>
+      <simple-id uuid='{A5839D83-7663-4CAC-89BD-2B96B25A8BBF}' />
+    </worksheet>
+    <worksheet name='TS - Filtered'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>Time Series trends for mobility index for </run>
+            <run bold='true' fontcolor='#091c32' fontsize='18'><![CDATA[<[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]>]]></run>
+            <run bold='true' fontcolor='#ffffff' fontsize='18'>  and </run>
+            <run bold='true' fontcolor='#091c32' fontsize='18'><![CDATA[<[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mobility_spending_tableau' name='federated.0s0ruct0u3qwss15vocqb15tmnbb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0s0ruct0u3qwss15vocqb15tmnbb'>
+            <column caption='Consumption Type' datatype='string' name='[consumption]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;alcoholic_beverage_sales&quot;' value='Alcohol and Beer Sales' />
+                <alias key='&quot;auto_parts_tires_sales&quot;' value='Auto Parts and Tire Sales' />
+                <alias key='&quot;electronics_sales&quot;' value='Electronics Sales' />
+                <alias key='&quot;grocery_sales&quot;' value='Grocery Sales' />
+                <alias key='&quot;restaurant_spend&quot;' value='Restaurant Spend' />
+                <alias key='&quot;sporting_good_sales&quot;' value='Sporting Goods Sales' />
+                <alias key='&quot;toy_store_sales&quot;' value='Toy Store Sales' />
+              </aliases>
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Mobility Index' datatype='real' name='[direction_requests]' role='measure' type='quantitative' />
+            <column-instance column='[consumption]' derivation='None' name='[none:consumption:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[transportation_type]' derivation='None' name='[none:transportation_type:nk]' pivot='key' type='nominal' />
+            <column caption='$MM' datatype='integer' name='[sales_MM_dollars]' role='measure' type='quantitative' />
+            <column-instance column='[direction_requests]' derivation='Sum' name='[sum:direction_requests:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sales_MM_dollars]' derivation='Sum' name='[sum:sales_MM_dollars:qk]' pivot='key' type='quantitative' />
+            <column caption='Transportation Type' datatype='string' name='[transportation_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[Action (Consumption Type,Transportation Type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_DB57EB3050864DD8A8DFB836AC8FEF50]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[consumption]' member='&quot;restaurant_spend&quot;' />
+              <groupfilter function='member' level='[transportation_type]' member='&quot;driving&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]'>
+            <groupfilter function='level-members' level='[none:consumption:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]'>
+            <groupfilter function='level-members' level='[none:transportation_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[Action (Consumption Type,Transportation Type)]</column>
+            <column>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]</column>
+            <column>[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' field-type='quantitative' scope='rows' type='space' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk]' value='false' />
+            <format attr='display' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' value='false' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]' value='18' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' value='18' />
+            <format attr='text-format' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]' value='c&quot;$&quot;#,##0;(&quot;$&quot;#,##0)' />
+            <format attr='font-size' field='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' value='14' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='vertical-align' id='refline2' value='center' />
+            <format attr='vertical-align' id='refline4' value='top' />
+            <format attr='font-size' id='refline0' value='14' />
+            <format attr='font-size' id='refline2' value='14' />
+            <format attr='font-size' id='refline4' value='14' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#7baf3c' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='font-size' value='11' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#091c32' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='none' paired-id='refline1' scope='per-table' symmetric='false' tooltip-type='none' value='#2020-04-11#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='1st round of economic stimulus checks' label-type='custom' paired-id='refline0' scope='per-table' symmetric='false' tooltip-type='none' value='#2020-04-17#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline2' label='2nd round of direct payments' label-type='custom' paired-id='refline3' scope='per-table' symmetric='false' tooltip-type='none' value='#2020-12-01#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline3' label-type='none' paired-id='refline2' scope='per-table' symmetric='false' tooltip-type='none' value='#2021-01-08#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline4' label-type='none' paired-id='refline5' scope='per-table' symmetric='false' tooltip-type='none' value='#2021-03-15#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='3' />
+            <reference-line axis-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' enable-instant-analytics='true' formula='constant' id='refline5' label='3rd round of stimulus checks' label-type='custom' paired-id='refline4' scope='per-table' symmetric='false' tooltip-type='none' value='#2021-03-31#' value-column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk]' z-order='3' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk] * ([federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:direction_requests:qk] + [federated.0s0ruct0u3qwss15vocqb15tmnbb].[sum:sales_MM_dollars:qk]))</rows>
+        <cols>([federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:consumption:nk] * [federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:date:qk])</cols>
+      </table>
+      <simple-id uuid='{3665B1FB-1814-4563-8AA2-B7846DBB3B70}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Apple Mobility Index and Consumption Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='24'>&lt;Sheet Name&gt;</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#7baf3c' fontsize='22'>How Americans&apos; mobility has eroded then accelerated Retail sales in last 2 years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1300' maxwidth='1600' minheight='1300' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='90462' id='28' param='vert' type-v2='layout-flow' w='99000' x='500' y='615'>
+            <zone h='7153' id='29' type-v2='title' w='99000' x='500' y='615'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='83309' id='26' param='horz' type-v2='layout-flow' w='99000' x='500' y='7768'>
+              <zone h='83309' id='23' param='horz' type-v2='layout-flow' w='99000' x='500' y='7768'>
+                <zone h='83309' id='21' type-v2='layout-basic' w='99000' x='500' y='7768'>
+                  <zone h='44358' id='3' name='TS - Filtered' w='99000' x='500' y='46719'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='padding' value='0' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38951' id='9' name='Correlations' show-caption='true' w='30312' x='500' y='7768'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='38951' id='20' name='Regression Filtered' w='68688' x='30812' y='7768'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='8308' id='34' is-scaled='1' param='C:/Users/armin/OneDrive/Documents/Revology/Brand Guidelines/Revology Analytics/Final Logo/Revology Analytics.png' type-v2='bitmap' url='https://revologyanalytics.com' w='7188' x='500' y='91077'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='8308' id='35' type-v2='text' w='91812' x='7688' y='91077'>
+            <formatted-text>
+              <run bold='true' fontsize='10' underline='true'>Data Sources:</run>
+              <run>Æ&#10;</run>
+              <run fontsize='10'>1. Apple Mobility Trends Report: shows relative volume of direction requests per country/region or city from January 13, 2020 to April 13, 2022. January 13, 2020 = 100, with all other time frames relative to that date. Mobility Index displayed for US only and averaged at the month level. </run>
+              <run auto-url='true' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://aws.amazon.com/marketplace/pp/prodview-ucdg4nudicxzi#dataSets&amp;quot;'>https://aws.amazon.com/marketplace/pp/prodview-ucdg4nudicxzi#dataSets</run>
+              <run>Æ&#10;</run>
+              <run fontsize='10'>2. Monthly Retail Sales: non-seasonally adjusted monthly consumer expenditures on select Retail categories. </run>
+              <run auto-url='true' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://fred.stlouisfed.org/&amp;quot;'>https://fred.stlouisfed.org/</run>
+              <run>Æ&#10;</run>
+              <run fontsize='10'>3. </run>
+              <run fontcolor='#333333' fontsize='10'>Original data and data prep: </run>
+              <run auto-url='true' fontcolor='#333333' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://github.com/revology-armin/sales_effectiveness&amp;quot;'>https://github.com/revology-armin/sales_effectiveness</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='4231' id='8' name='TS - Filtered' pane-specification-id='1' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' show-title='false' type-v2='color' w='16063' x='72438' y='80077' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontsize='24'>&lt;Sheet Name&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#7baf3c' fontsize='22'>How Americans&apos; mobility has eroded &amp; accelerated Retail sales in last 2 years</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98770' id='66' param='vert' type-v2='layout-flow' w='99000' x='500' y='615'>
+                <zone h='7153' id='29' type-v2='title' w='99000' x='500' y='615'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38951' id='9' is-fixed='true' name='Correlations' show-caption='true' w='30312' x='500' y='7768'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38951' id='20' is-fixed='true' name='Regression Filtered' w='68688' x='30812' y='7768'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44358' id='3' is-fixed='true' name='TS - Filtered' w='99000' x='500' y='46719'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4231' id='8' name='TS - Filtered' pane-specification-id='1' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' show-title='false' type-v2='color' w='16063' x='72438' y='80077'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='100' h='8308' id='34' is-fixed='true' is-scaled='1' param='C:/Users/armin/OneDrive/Documents/Revology/Brand Guidelines/Revology Analytics/Final Logo/Revology Analytics.png' type-v2='bitmap' url='https://revologyanalytics.com' w='7188' x='500' y='91077'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8308' id='35' type-v2='text' w='91812' x='7688' y='91077'>
+                  <formatted-text>
+                    <run bold='true' fontsize='10' underline='true'>Data Sources:</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>1. Apple Mobility Trends Report: shows relative volume of direction requests per country/region or city from January 13, 2020 to April 13, 2022. January 13, 2020 = 100, with all other time frames relative to that date. Mobility Index displayed for US only and averaged at the month level. </run>
+                    <run auto-url='true' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://aws.amazon.com/marketplace/pp/prodview-ucdg4nudicxzi#dataSets&amp;quot;'>https://aws.amazon.com/marketplace/pp/prodview-ucdg4nudicxzi#dataSets</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>2. Monthly Retail Sales: non-seasonally adjusted monthly consumer expenditures on select Retail categories. </run>
+                    <run auto-url='true' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://fred.stlouisfed.org/&amp;quot;'>https://fred.stlouisfed.org/</run>
+                    <run>Æ&#10;</run>
+                    <run fontsize='10'>3. </run>
+                    <run fontcolor='#333333' fontsize='10'>Original data and data prep: </run>
+                    <run auto-url='true' fontcolor='#333333' fontsize='10' hyperlink='tabdoc:load-url url=&amp;quot;https://github.com/revology-armin/sales_effectiveness&amp;quot;'>https://github.com/revology-armin/sales_effectiveness</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D4959B03-6056-4D28-94B5-55641A788392}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Consumption vs Mobility Index Matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{78F3AA8B-8B08-44B9-92D5-2DC6AFBCCE74}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Apple Mobility Index and Consumption Trends'>
+      <viewpoints>
+        <viewpoint name='Correlations' />
+        <viewpoint name='Regression Filtered'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='TS - Filtered'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='29' />
+      <simple-id uuid='{06BBEFB3-CACD-4422-AA25-79087FFAE48A}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Correlations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[usr:Calculation_655555251511058432:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB742BBF-E809-4162-9F3E-D5C6964F73D4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Regression Filtered'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[none:transportation_type:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A4258CCF-BDDD-43B6-9530-23938E5D93E0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='TS - Filtered'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0s0ruct0u3qwss15vocqb15tmnbb].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94D2BF1F-4A32-4702-B326-8FEC52AC3294}' />
+    </window>
+  </windows>
+</workbook>
